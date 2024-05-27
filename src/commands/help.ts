@@ -11,6 +11,7 @@ module.exports = {
             .addFields(
                 { name: '```!ping```', value: 'Ping the bot to check its responsiveness.' },
                 { name: '```!warn @user```', value: 'Warn a user. After 3 warnings, the user will be muted.' },
+                { name: '```!repeat```', value: 'Toggle repeat mode. When enabled, the bot will repeat every message sent by members.' },
             );
 
         message.channel.send({ embeds: [helpEmbed] });
