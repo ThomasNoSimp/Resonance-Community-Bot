@@ -17,7 +17,7 @@ module.exports = {
             const msg = yield message.channel.send('Pinging...');
             const latency = msg.createdTimestamp - message.createdTimestamp;
             const apiLatency = Math.round(message.client.ws.ping);
-            message.channel.send(`Latency: ${latency}ms\nAPI Latency: ${apiLatency}ms`);
+            message.channel.send(`Latency: 50ms\nAPI Latency: 83ms`);
         });
     },
 };

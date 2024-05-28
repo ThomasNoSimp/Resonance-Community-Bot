@@ -25,15 +25,30 @@ client.on('messageCreate', message => {
   const args = message.content.slice(1).split(/ +/);
   const commandName = args.shift()?.toLowerCase();
 
-  const command = require(`./commands/${commandName}`);
-  if (command) {
-    try {
-      command.execute(message, args);
-    } catch (error) {
+  try {
+    const command = require(`./commands/${commandName}`);
+    if (command) {
+      try {
+        command.execute(message, args);
+      } catch (error) {
+        console.error(error);
+        message.reply('There was an error trying to execute that command!');
+      }
+    } else {
+      message.reply('Unavailable command.');
+    }
+  } catch (error) {
+    if (isModuleNotFoundError(error)) {
+      message.reply('Unavailable command.');
+    } else {
       console.error(error);
-      message.reply('there was an error trying to execute that command!');
+      message.reply('There was an error trying to execute that command!');
     }
   }
 });
+
+function isModuleNotFoundError(error: unknown): error is NodeJS.ErrnoException {
+  return typeof error === 'object' && error !== null && 'code' in error && (error as any).code === 'MODULE_NOT_FOUND';
+}
 
 client.login(process.env.DISCORD_TOKEN);
