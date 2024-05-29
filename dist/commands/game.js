@@ -7,10 +7,11 @@ module.exports = {
     execute(message) {
         if (message.author.bot)
             return;
-        const mainEmbed = new discord_js_1.EmbedBuilder()
+        const gameSelectionEmbed = new discord_js_1.EmbedBuilder()
             .setColor('#0099ff')
-            .setTitle('Notice')
-            .setDescription('This command is still under development.');
-        message.reply({ embeds: [mainEmbed] });
+            .setTitle('Game Selection')
+            .setDescription('Please select a game from the list below.')
+            .addFields({ name: '```1. Number Guessing Game```', value: '`===============`' }, { name: '```2. Quiz Game```', value: '`===============`' }, { name: '```3. Memory Game```', value: '`===============`' });
+        message.reply({ embeds: [gameSelectionEmbed] });
     }
 };

@@ -1,4 +1,4 @@
-import { Embed, Message, EmbedBuilder } from 'discord.js';
+import { EmbedBuilder, Message } from "discord.js";
 
 module.exports = {
     name: 'game',
@@ -6,11 +6,16 @@ module.exports = {
     execute(message: Message) {
         if (message.author.bot) return;
 
-        const mainEmbed = new EmbedBuilder()
+        const gameSelectionEmbed = new EmbedBuilder()
                 .setColor('#0099ff')
-                .setTitle('Notice')
-                .setDescription('This command is still under development.')
+                .setTitle('Game Selection')
+                .setDescription('Please select a game from the list below.')
+                .addFields(
+                    { name: '```1. Number Guessing Game```', value: '`===============`' },
+                    { name: '```2. Quiz Game```', value: '`===============`' },
+                    { name: '```3. Memory Game```', value: '`===============`' },
+                );
 
-        message.reply({ embeds: [mainEmbed] });
+        message.reply({ embeds: [gameSelectionEmbed] });
     }
 };
