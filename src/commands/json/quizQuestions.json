@@ -1,0 +1,570 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "answer": "Paris"
+    },
+    {
+        "question": "What is the largest mammal?",
+        "answer": "Blue whale"
+    },
+    {
+        "question": "What is the fastest land animal?",
+        "answer": "Cheetah"
+    },
+    {
+        "question": "What does HTML stand for?",
+        "answer": "Hypertext Markup Language"
+    },
+    {
+        "question": "What is the capital of Japan?",
+        "answer": "Tokyo"
+    },
+    {
+        "question": "What does CSS stand for?",
+        "answer": "Cascading Style Sheets"
+    },
+    {
+        "question": "What does HTTP stand for?",
+        "answer": "Hypertext Transfer Protocol"
+    },
+    {
+        "question": "What does API stand for?",
+        "answer": "Application Programming Interface"
+    },
+    {
+        "question": "What programming language is known for its use in statistical computing and graphics?",
+        "answer": "R"
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "answer": "Pacific Ocean"
+    },
+    {
+        "question": "What does SQL stand for?",
+        "answer": "Structured Query Language"
+    },
+    {
+        "question": "What does URL stand for?",
+        "answer": "Uniform Resource Locator"
+    },
+    {
+        "question": "What programming language is often used for web development and server-side scripting?",
+        "answer": "JavaScript"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answer": "Au"
+    },
+    {
+        "question": "What programming language is primarily used for scientific and numerical computing?",
+        "answer": "Python"
+    },
+    {
+        "question": "What is the study of algorithms and data structures called?",
+        "answer": "Computer Science"
+    },
+    {
+        "question": "What is the chemical symbol for oxygen?",
+        "answer": "O"
+    },
+    {
+        "question": "What is the process of converting code into an executable program called?",
+        "answer": "Compilation"
+    },
+    {
+        "question": "What programming language is commonly used for building mobile applications?",
+        "answer": "Java"
+    },
+    {
+        "question": "What does IDE stand for?",
+        "answer": "Integrated Development Environment"
+    },
+    {
+        "question": "What is the study of digital data transmission called?",
+        "answer": "Networking"
+    },
+    {
+        "question": "What does XML stand for?",
+        "answer": "eXtensible Markup Language"
+    },
+    {
+        "question": "What does JSON stand for?",
+        "answer": "JavaScript Object Notation"
+    },
+    {
+        "question": "What is the process of finding and fixing errors in code called?",
+        "answer": "Debugging"
+    },
+    {
+        "question": "What does FTP stand for?",
+        "answer": "File Transfer Protocol"
+    },
+    {
+        "question": "What does SSH stand for?",
+        "answer": "Secure Shell"
+    },
+    {
+        "question": "What is the process of testing software before it is released called?",
+        "answer": "Quality Assurance (QA)"
+    },
+    {
+        "question": "What does CRUD stand for in database operations?",
+        "answer": "Create, Read, Update, Delete"
+    },
+    {
+        "question": "What is the most popular version control system used by developers?",
+        "answer": "Git"
+    },
+    {
+        "question": "What is the process of writing code that can be understood and maintained by others called?",
+        "answer": "Code Documentation"
+    },
+    {
+        "question": "What does SSL stand for?",
+        "answer": "Secure Sockets Layer"
+    },
+    {
+        "question": "What is the process of making software updates available to users called?",
+        "answer": "Software Deployment"
+    },
+    {
+        "question": "What is the study of user interface design and user experience called?",
+        "answer": "UX/UI Design"
+    },
+    {
+        "question": "What does CMS stand for in web development?",
+        "answer": "Content Management System"
+    },
+    {
+        "question": "What is the process of converting data into a coded form called?",
+        "answer": "Encryption"
+    },
+    {
+        "question": "What does MVC stand for in software architecture?",
+        "answer": "Model-View-Controller"
+    },
+    {
+        "question": "What is the process of converting code written in a high-level language into machine code called?",
+        "answer": "Compilation"
+    },
+    {
+        "question": "What does API stand for in web development?",
+        "answer": "Application Programming Interface"
+    },
+    {
+        "question": "What is the process of hiding the complexity of software systems and exposing only the necessary functionalities called?",
+        "answer": "Abstraction"
+    },
+    {
+        "question": "What does HTML5 stand for?",
+        "answer": "Hypertext Markup Language version 5"
+    },
+    {
+        "question": "What is the process of ensuring that software meets specified requirements and quality standards called?",
+        "answer": "Software Testing"
+    },
+    {
+        "question": "What does CLI stand for?",
+        "answer": "Command Line Interface"
+    },
+    {
+        "question": "What is the process of managing and controlling changes to software code called?",
+        "answer": "Version Control"
+    },
+    {
+        "question": "What does API stand for in programming?",
+        "answer": "Application Programming Interface"
+    },
+    {
+        "question": "What is the process of converting data from one format to another called?",
+        "answer": "Data Conversion"
+    },
+    {
+        "question": "What does JVM stand for?",
+        "answer": "Java Virtual Machine"
+    },
+    {
+        "question": "What is the process of designing the structure and behavior of software systems called?",
+        "answer": "Software Architecture"
+    },
+    {
+        "question": "What does CDN stand for in web development?",
+        "answer": "Content Delivery Network"
+    },
+    {
+        "question": "What is the process of ensuring that software applications perform adequately under different conditions called?",
+        "answer": "Performance Testing"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answer": "Au"
+    },
+    {
+        "question": "Who developed the theory of relativity?",
+        "answer": "Albert Einstein"
+    },
+    {
+        "question": "What is the process of plants making their own food called?",
+        "answer": "Photosynthesis"
+    },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "answer": "Mount Everest"
+    },
+    {
+        "question": "What is the capital of Japan?",
+        "answer": "Tokyo"
+    },
+    {
+        "question": "What is the boiling point of water in Celsius?",
+        "answer": "100 degrees"
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "What is the chemical formula for water?",
+        "answer": "H2O"
+    },
+    {
+        "question": "What is the process of a caterpillar turning into a butterfly called?",
+        "answer": "Metamorphosis"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "answer": "William Shakespeare"
+    },
+    {
+        "question": "What is the closest planet to the Sun?",
+        "answer": "Mercury"
+    },
+    {
+        "question": "Who discovered penicillin?",
+        "answer": "Alexander Fleming"
+    },
+    {
+        "question": "What is the chemical symbol for oxygen?",
+        "answer": "O"
+    },
+    {
+        "question": "What is the speed of light in a vacuum?",
+        "answer": "299,792,458 meters per second"
+    },
+    {
+        "question": "What is the process of a liquid turning into a gas called?",
+        "answer": "Evaporation"
+    },
+    {
+        "question": "Who was the first person to walk on the moon?",
+        "answer": "Neil Armstrong"
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "answer": "Pacific Ocean"
+    },
+    {
+        "question": "What is the chemical symbol for carbon?",
+        "answer": "C"
+    },
+    {
+        "question": "What is the Earth's primary source of energy?",
+        "answer": "Sun"
+    },
+    {
+        "question": "What is the chemical formula for glucose?",
+        "answer": "C6H12O6"
+    },
+    {
+        "question": "Who painted 'Starry Night'?",
+        "answer": "Vincent van Gogh"
+    },
+    {
+        "question": "What is the smallest planet in our solar system?",
+        "answer": "Mercury"
+    },
+    {
+        "question": "Who developed the first successful polio vaccine?",
+        "answer": "Jonas Salk"
+    },
+    {
+        "question": "What is the chemical symbol for sodium?",
+        "answer": "Na"
+    },
+    {
+        "question": "What is the study of plants called?",
+        "answer": "Botany"
+    },
+    {
+        "question": "What is the chemical formula for table salt?",
+        "answer": "NaCl"
+    },
+    {
+        "question": "Who is known as the father of modern physics?",
+        "answer": "Albert Einstein"
+    },
+    {
+        "question": "What is the chemical symbol for helium?",
+        "answer": "He"
+    },
+    {
+        "question": "What is the Earth's largest continent?",
+        "answer": "Asia"
+    },
+    {
+        "question": "Who invented the telephone?",
+        "answer": "Alexander Graham Bell"
+    },
+    {
+        "question": "What is the chemical formula for sulfuric acid?",
+        "answer": "H2SO4"
+    },
+    {
+        "question": "What is the study of earthquakes called?",
+        "answer": "Seismology"
+    },
+    {
+        "question": "What is the chemical symbol for iron?",
+        "answer": "Fe"
+    },
+    {
+        "question": "Who formulated the laws of motion?",
+        "answer": "Isaac Newton"
+    },
+    {
+        "question": "What is the chemical formula for carbon dioxide?",
+        "answer": "CO2"
+    },
+    {
+        "question": "What is the study of the atmosphere called?",
+        "answer": "Meteorology"
+    },
+    {
+        "question": "What is the chemical symbol for potassium?",
+        "answer": "K"
+    },
+    {
+        "question": "Who discovered X-rays?",
+        "answer": "Wilhelm Conrad Röntgen"
+    },
+    {
+        "question": "What is the chemical formula for ammonia?",
+        "answer": "NH3"
+    },
+    {
+        "question": "What is the study of the origin and history of words called?",
+        "answer": "Etymology"
+    },
+    {
+        "question": "What is the chemical symbol for lead?",
+        "answer": "Pb"
+    },
+    {
+        "question": "Who proposed the theory of evolution by natural selection?",
+        "answer": "Charles Darwin"
+    },
+    {
+        "question": "What is the chemical formula for hydrogen peroxide?",
+        "answer": "H2O2"
+    },
+    {
+        "question": "What is the study of fossils called?",
+        "answer": "Paleontology"
+    },
+    {
+        "question": "What is the chemical symbol for silver?",
+        "answer": "Ag"
+    },
+    {
+        "question": "Who invented the World Wide Web?",
+        "answer": "Tim Berners-Lee"
+    },
+    {
+        "question": "What is the study of animal behavior called?",
+        "answer": "Ethology"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answer": "Au"
+    },
+    {
+        "question": "Who developed the theory of relativity?",
+        "answer": "Albert Einstein"
+    },
+    {
+        "question": "What is the process of plants making their own food called?",
+        "answer": "Photosynthesis"
+    },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "answer": "Mount Everest"
+    },
+    {
+        "question": "What is the boiling point of water in Celsius?",
+        "answer": "100 degrees"
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter"
+    },
+    {
+        "question": "What is the chemical formula for water?",
+        "answer": "H2O"
+    },
+    {
+        "question": "What is the process of a caterpillar turning into a butterfly called?",
+        "answer": "Metamorphosis"
+    },
+    {
+        "question": "What is the closest planet to the Sun?",
+        "answer": "Mercury"
+    },
+    {
+        "question": "What is the speed of light in a vacuum?",
+        "answer": "299,792,458 meters per second"
+    },
+    {
+        "question": "What is the process of a liquid turning into a gas called?",
+        "answer": "Evaporation"
+    },
+    {
+        "question": "Who was the first person to walk on the moon?",
+        "answer": "Neil Armstrong"
+    },
+    {
+        "question": "What is the smallest planet in our solar system?",
+        "answer": "Mercury"
+    },
+    {
+        "question": "What is the chemical symbol for oxygen?",
+        "answer": "O"
+    },
+    {
+        "question": "What is the chemical symbol for carbon?",
+        "answer": "C"
+    },
+    {
+        "question": "What is the Earth's primary source of energy?",
+        "answer": "Sun"
+    },
+    {
+        "question": "Who formulated the laws of motion?",
+        "answer": "Isaac Newton"
+    },
+    {
+        "question": "What is the chemical formula for carbon dioxide?",
+        "answer": "CO2"
+    },
+    {
+        "question": "What is the chemical formula for sulfuric acid?",
+        "answer": "H2SO4"
+    },
+    {
+        "question": "What is the chemical symbol for iron?",
+        "answer": "Fe"
+    },
+    {
+        "question": "What is the chemical formula for ammonia?",
+        "answer": "NH3"
+    },
+    {
+        "question": "Who discovered X-rays?",
+        "answer": "Wilhelm Conrad Röntgen"
+    },
+    {
+        "question": "What is the chemical formula for hydrogen peroxide?",
+        "answer": "H2O2"
+    },
+    {
+        "question": "What does SSL stand for?",
+        "answer": "Secure Sockets Layer"
+    },
+    {
+        "question": "What is the chemical symbol for silver?",
+        "answer": "Ag"
+    },
+    {
+        "question": "What is the study of earthquakes called?",
+        "answer": "Seismology"
+    },
+    {
+        "question": "What is the chemical symbol for lead?",
+        "answer": "Pb"
+    },
+    {
+        "question": "What is the chemical formula for methane?",
+        "answer": "CH4"
+    },
+    {
+        "question": "Who proposed the theory of electromagnetism?",
+        "answer": "James Clerk Maxwell"
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "answer": "Newton"
+    },
+    {
+        "question": "What is the chemical symbol for sodium?",
+        "answer": "Na"
+    },
+    {
+        "question": "What is the study of sound called?",
+        "answer": "Acoustics"
+    },
+    {
+        "question": "What is the chemical formula for table salt?",
+        "answer": "NaCl"
+    },
+    {
+        "question": "Who discovered the law of gravitation?",
+        "answer": "Isaac Newton"
+    },
+    {
+        "question": "What is the SI unit of electric current?",
+        "answer": "Ampere"
+    },
+    {
+        "question": "What is the chemical symbol for potassium?",
+        "answer": "K"
+    },
+    {
+        "question": "What is the study of light called?",
+        "answer": "Optics"
+    },
+    {
+        "question": "What is the chemical formula for calcium carbonate?",
+        "answer": "CaCO3"
+    },
+    {
+        "question": "Who discovered the neutron?",
+        "answer": "James Chadwick"
+    },
+    {
+        "question": "What is the SI unit of energy?",
+        "answer": "Joule"
+    },
+    {
+        "question": "What is the chemical symbol for copper?",
+        "answer": "Cu"
+    },
+    {
+        "question": "What is the study of heat called?",
+        "answer": "Thermodynamics"
+    },
+    {
+        "question": "What is the chemical formula for ethanol?",
+        "answer": "C2H5OH"
+    },
+    {
+        "question": "Who formulated the theory of general relativity?",
+        "answer": "Albert Einstein"
+    },
+    {
+        "question": "What is the SI unit of power?",
+        "answer": "Watt"
+    }
+]

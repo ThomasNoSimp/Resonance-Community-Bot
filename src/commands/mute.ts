@@ -1,8 +1,8 @@
-import { Message, PermissionsBitField, Role, GuildMember, TextChannel, VoiceChannel, NewsChannel, StageChannel, CategoryChannel } from 'discord.js';
+import { Message, PermissionsBitField } from 'discord.js';
 
 module.exports = {
     name: 'mute',
-    description: 'Mute a user.',
+    description: 'Mute a user using the built-in timeout feature.',
     async execute(message: Message, args: string[]) {
         if (!message.member?.permissions.has(PermissionsBitField.Flags.Administrator)) {
             return message.reply('You do not have permission to use this command.');
@@ -21,45 +21,20 @@ module.exports = {
             return message.reply('User not found in this guild.');
         }
 
-        let muteRole = guild.roles.cache.find(role => role.name === 'Muted');
-        if (!muteRole) {
-            try {
-                muteRole = await guild.roles.create({
-                    name: 'Muted',
-                    permissions: [],
-                });
-
-                guild.channels.cache.forEach(async (channel) => {
-                    if (
-                        channel instanceof TextChannel || 
-                        channel instanceof VoiceChannel || 
-                        channel instanceof NewsChannel || 
-                        channel instanceof StageChannel || 
-                        channel instanceof CategoryChannel
-                    ) {
-                        await channel.permissionOverwrites.create(muteRole as Role, {
-                            SendMessages: false,
-                            AddReactions: false,
-                            Speak: false,
-                            Stream: false,
-                        });
-                    }
-                });
-
-                message.channel.send('Muted role has been created.');
-            } catch (error) {
-                console.error(error);
-                return message.channel.send('An error occurred while creating the Muted role.');
-            }
+        if (args.length < 2) {
+            return message.reply('Please provide a duration for the mute in minutes.');
         }
 
-        if (member.roles.cache.has(muteRole.id)) {
-            return message.reply('This user is already muted.');
+        const muteDuration = parseInt(args[1], 10);
+        if (isNaN(muteDuration) || muteDuration <= 0) {
+            return message.reply('Please provide a valid duration in minutes.');
         }
+
+        const muteTimeout = muteDuration * 60 * 1000; // Convert minutes to milliseconds
 
         try {
-            await member.roles.add(muteRole);
-            message.channel.send(`${mentionedUser.tag} has been muted.`);
+            await member.timeout(muteTimeout, 'Muted by an administrator');
+            message.channel.send(`${mentionedUser.tag} has been muted for ${muteDuration} minutes.`);
         } catch (error) {
             console.error(error);
             message.channel.send('An error occurred while muting the user.');

@@ -11,8 +11,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = require("discord.js");
 module.exports = {
-    name: 'mute',
-    description: 'Mute a user using the built-in timeout feature.',
+    name: 'unmute',
+    description: 'Unmute a user.',
     execute(message, args) {
         return __awaiter(this, void 0, void 0, function* () {
             var _a;
@@ -21,7 +21,7 @@ module.exports = {
             }
             const mentionedUser = message.mentions.users.first();
             if (!mentionedUser) {
-                return message.reply('Please mention a valid user to mute.');
+                return message.reply('Please mention a valid user to unmute.');
             }
             const guild = message.guild;
             if (!guild)
@@ -30,21 +30,13 @@ module.exports = {
             if (!member) {
                 return message.reply('User not found in this guild.');
             }
-            if (args.length < 2) {
-                return message.reply('Please provide a duration for the mute in minutes.');
-            }
-            const muteDuration = parseInt(args[1], 10);
-            if (isNaN(muteDuration) || muteDuration <= 0) {
-                return message.reply('Please provide a valid duration in minutes.');
-            }
-            const muteTimeout = muteDuration * 60 * 1000; // Convert minutes to milliseconds
             try {
-                yield member.timeout(muteTimeout, 'Muted by an administrator');
-                message.channel.send(`${mentionedUser.tag} has been muted for ${muteDuration} minutes.`);
+                yield member.timeout(null, 'Unmuted by an administrator');
+                message.channel.send(`${mentionedUser.tag} has been unmuted.`);
             }
             catch (error) {
                 console.error(error);
-                message.channel.send('An error occurred while muting the user.');
+                message.channel.send('An error occurred while unmuting the user.');
             }
         });
     },
