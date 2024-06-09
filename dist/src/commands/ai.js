@@ -36,7 +36,6 @@ function generateAIResponse() {
         var _a;
         const prompt = 'Ask something here...';
         const openaiUrl = 'https://api.openai.com/v1/completions';
-        const apiKey = 'sk-proj-xJhaUa5nRVrKTlqpI5x9T3BlbkFJdnSLfMRUmBKThzSZhNQd';
         try {
             const response = yield axios_1.default.post(openaiUrl, {
                 model: 'text-davinci-002', // Choose the appropriate model
