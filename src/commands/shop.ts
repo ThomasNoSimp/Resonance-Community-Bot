@@ -1,4 +1,3 @@
-// shop.ts
 import { Message, ButtonInteraction, Interaction, MessageComponentInteraction, GuildMember } from 'discord.js';
 import { shopWelcomeEmbed, shopEmbed } from './components/shopEmbeds';
 import { viewShopButton } from './components/shopComponents';
@@ -7,7 +6,9 @@ import fs from 'fs';
 import path from 'path';
 
 const resonanceCoinsPath = path.join(__dirname, 'json', 'resonanceCoins.json');
+const inventoryPath = path.join(__dirname, 'json', 'inventory.json');
 let resonanceCoins = JSON.parse(fs.readFileSync(resonanceCoinsPath, 'utf-8'));
+let inventory = JSON.parse(fs.readFileSync(inventoryPath, 'utf-8'));
 
 // Function to draw an item based on probability
 function drawItem(contents: { name: string, probability: number }[]) {
@@ -50,6 +51,13 @@ module.exports = {
             // Deduct item price from user's balance
             resonanceCoins[userId] -= item.price;
             fs.writeFileSync(resonanceCoinsPath, JSON.stringify(resonanceCoins, null, 2));
+
+            // Add item to user's inventory
+            if (!inventory[userId]) {
+                inventory[userId] = [];
+            }
+            inventory[userId].push(item.name);
+            fs.writeFileSync(inventoryPath, JSON.stringify(inventory, null, 2));
 
             if (item.category === 'Crate') {
                 const drawnItem = drawItem(item.contents);

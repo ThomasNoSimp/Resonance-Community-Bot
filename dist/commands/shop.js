@@ -18,7 +18,9 @@ const shopItems_1 = require("./components/shopItems");
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const resonanceCoinsPath = path_1.default.join(__dirname, 'json', 'resonanceCoins.json');
+const inventoryPath = path_1.default.join(__dirname, 'json', 'inventory.json');
 let resonanceCoins = JSON.parse(fs_1.default.readFileSync(resonanceCoinsPath, 'utf-8'));
+let inventory = JSON.parse(fs_1.default.readFileSync(inventoryPath, 'utf-8'));
 // Function to draw an item based on probability
 function drawItem(contents) {
     const rand = Math.random();
@@ -55,6 +57,12 @@ module.exports = {
                 // Deduct item price from user's balance
                 resonanceCoins[userId] -= item.price;
                 fs_1.default.writeFileSync(resonanceCoinsPath, JSON.stringify(resonanceCoins, null, 2));
+                // Add item to user's inventory
+                if (!inventory[userId]) {
+                    inventory[userId] = [];
+                }
+                inventory[userId].push(item.name);
+                fs_1.default.writeFileSync(inventoryPath, JSON.stringify(inventory, null, 2));
                 if (item.category === 'Crate') {
                     const drawnItem = drawItem(item.contents);
                     return message.reply(`You have successfully purchased a **${item.name}** and received **${drawnItem}**!`);
